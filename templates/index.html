@@ -1,17 +1,114 @@
-<!DOCTYPE html>
-<html lang=ja>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-</head>
+{% extends "base.html" %}
 
-<body>
-    <header class=""grid-container>
-        
-    </header>>
+{% block title %}むさしの号特集 - ホーム{% endblock %}
 
-    </header>
-    <h1>こんにちは、{{ name }}さん</h1>
+{% block page_title %}
+<h1>むさしの号特集</h1>
+{% endblock %}
 
-</body>
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <h2 class="text-black ">そもそも<u>むさしの号</u>とは？</h2>
+    </div>
+</div>
+
+<div class="container mt-1 mb-5 card">
+    <div class="row">
+        <div class="col-6">
+            <p>左に示す画像がむさしの号である。</p>
+            <p>むさしの号とは大宮と八王子を直通で繋ぐ電車のことだ。<br>通常は1時間半かかるところを1時間程度、しかも乗り換えなしで繋ぐため特定の層からは大人気なのである。</p>
+        </div>
+        <div class="col-auto">
+            <img src="{{ url_for('static', filename='images/train.png') }}" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+<h2>むさしの号の時間は？</h2>
+
+<div class="container card">
+    <div class="row">
+        <div class="col-6">
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">むさしの号</th>
+                        <th scope="col">時刻</th>
+                        <th scope="col">行き先</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td>8時49分</td>
+                        <td>八王子行</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td>18時47分</td>
+                        <td>八王子行</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td>20時31分</td>
+                        <td>八王子行</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col">むさしの号</th>
+                        <th scope="col">時刻</th>
+                        <th scope="col">行き先</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td>16時55分</td>
+                        <td>大宮行</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td>18時48分</td>
+                        <td>大宮行</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>上記の図は、平日にむさしの号が発着する時間を示している。</p>
+            <p>この図を一目見ればお分かりだろう。1日で運航される数が異様に少ないのである。</p>
+            <p>八王子駅でむさしの号を逃したり、運休になった日なんかは最悪なのである。</p>
+        </div>
+    </div>
+</div>
+
+<h2 class="mt-5">むさしの号増やしてほしい🙏😊</h2>
+
+<div class="container card">
+    <div class="row mt-3">
+        <div class="col img">
+            <p>むさしの号増えろ、増やしてください</p>
+            <p>これはむさしの号を使うすべての人の願いであることは明白である。</p>
+            <p>JR東日本は直ちにむさしの号を1時間に1本程度に増やし通勤・通学・旅行を快適にすべきである。</p>
+        </div>
+    </div>
+</div>
+<!-- <div class="container mt-5">
+    <div class="row">
+        <div class="col-6 px-0 mx-0">
+            <img src="{{ url_for('static', filename='images/kokkai.jpg') }}" class="img-fluid">
+        </div>
+        <div class="col-6 px-0 mx-0">
+            <img src="{{ url_for('static', filename='images/diet.png') }}" class="img-fluid">
+        </div>
+    </div>
+</div> -->
+{% endblock %}

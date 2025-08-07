@@ -4,7 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('base.html', title='うんち',name="船岡")
+    return render_template('index.html')
+
+@app.route('/schedule')
+def schedule():
+    return render_template('schedule.html')
 
 @app.route("/about")
 def about():

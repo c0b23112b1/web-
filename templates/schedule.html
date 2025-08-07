@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}むさしの号時刻表{% endblock %}
+
+{% block page_title %}
+<h1>むさしの号時刻表</h1>
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center mb-4">平日運行時刻表</h2>
+            <p class="text-center text-muted">※土日祝日は運休</p>
+        </div>
+    </div>
+</div>
+
+<div class="container card">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="text-center text-primary">八王子行き</h3>
+            <table class="table table-bordered table-hover mt-4">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">列車名</th>
+                        <th scope="col">発車時刻</th>
+                        <th scope="col">行き先</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td><strong>8:49</strong></td>
+                        <td>八王子</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td><strong>18:47</strong></td>
+                        <td>八王子</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td><strong>20:31</strong></td>
+                        <td>八王子</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <h3 class="text-center text-success">大宮行き</h3>
+            <table class="table table-bordered table-hover mt-4">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">列車名</th>
+                        <th scope="col">発車時刻</th>
+                        <th scope="col">行き先</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td><strong>16:55</strong></td>
+                        <td>大宮</td>
+                    </tr>
+                    <tr>
+                        <td>むさしの号</td>
+                        <td><strong>18:48</strong></td>
+                        <td>大宮</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="alert alert-warning">
+                <h4>⚠️ 注意事項</h4>
+                <ul>
+                    <li>1日わずか5本の運行です</li>
+                    <li>土日祝日は運休です</li>
+                    <li>遅延・運休の可能性があります</li>
+                    <li>事前にJR東日本の運行状況をご確認ください</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h3>むさしの号増便を求める声</h3>
+            <p class="lead">通勤・通学・旅行を快適にするため、1時間に1本程度の運行を求めます！</p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary">増便要望書を書く</button>
+                <button type="button" class="btn btn-success">署名に参加する</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
