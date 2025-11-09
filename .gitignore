@@ -1,7 +1,5 @@
 # Python 仮想環境
-venv/
 venv_wsl/
-flask/
 
 # キャッシュや不要ファイル
 __pycache__/
@@ -13,6 +11,5 @@ __pycache__/
 .env
 # IDEやエディタの設定ファイル
 .vscode/
-
 
 memo.txt
