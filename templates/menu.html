@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}メニュー画面{% endblock %}
+
+{% block page_title %}
+<h1>メニュー画面</h1>
+{% endblock %}
+
+{% block content %}
+<div class="card m-3">
+    <div class="card-body">
+        <a href="{{ url_for('home') }}">・メニュー画面はここです</a>
+    </div>
+</div>
+
+<div class="card m-3">
+    <div class="card-body">
+        <a href="{{ url_for('main') }}">・むさしの号とは</a>
+    </div>
+</div>
+
+<div class="card m-3">
+    <div class="card-body">
+        <a href="{{ url_for('schedule') }}">・むさしの号の時間はこちら</a>
+    </div>
+</div>
+{% endblock %}

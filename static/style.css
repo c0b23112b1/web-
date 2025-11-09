@@ -1,18 +1,18 @@
 body {
     padding-top:50px;
-    padding-bottom:50px;
+    /* padding-bottom:50px; */
 }
 
 /* スティッキーフッター用のスタイル */
-.footer {
+/* .footer {
     background-color: #343a40;
     color: white;
     padding: 1rem 0;
     margin-top: auto;
-}
+} */
 
 /* 固定フッターの代替スタイル */
-.footer-fixed {
+/* .footer-fixed {
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -20,9 +20,9 @@ body {
     color: white;
     padding: 1rem 0;
     z-index: 1000;
-}
+} */
 
 /* フッター固定時のメインコンテンツ調整 */
-.main-with-fixed-footer {
-    margin-bottom: 80px; /* フッターの高さ分 */
-}
+/* .main-with-fixed-footer {
+    margin-bottom: 80px; 
+} */
