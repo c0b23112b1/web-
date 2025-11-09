@@ -13,3 +13,6 @@ __pycache__/
 .env
 # IDEやエディタの設定ファイル
 .vscode/
+
+
+memo.txt
