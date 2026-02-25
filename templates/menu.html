@@ -7,21 +7,46 @@
 {% endblock %}
 
 {% block content %}
-<div class="card m-3">
-    <div class="card-body">
-        <a href="{{ url_for('home') }}">・メニュー画面はここです</a>
-    </div>
-</div>
+<div class="container py-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- ホーム -->
+        <div class="col">
+            <a href="{{ url_for('home') }}" class="text-decoration-none">
+                <div class="card h-100 text-white bg-primary shadow-lg border-0 rounded-4">
+                    <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                        <div class="display-1 mb-3">🏠</div>
+                        <h3 class="card-title fw-bold mb-2">ホーム</h3>
+                        <p class="card-text opacity-75">メニュー画面に戻る</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-<div class="card m-3">
-    <div class="card-body">
-        <a href="{{ url_for('main') }}">・むさしの号とは</a>
-    </div>
-</div>
+        <!-- むさしの号とは -->
+        <div class="col">
+            <a href="{{ url_for('main') }}" class="text-decoration-none">
+                <div class="card h-100 text-white bg-danger shadow-lg border-0 rounded-4">
+                    <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                        <div class="display-1 mb-3">ℹ️</div>
+                        <h3 class="card-title fw-bold mb-2">むさしの号とは</h3>
+                        <p class="card-text opacity-75">詳しい情報を見る</p>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-<div class="card m-3">
-    <div class="card-body">
-        <a href="{{ url_for('schedule') }}">・むさしの号の時間はこちら</a>
+        <!-- スケジュール -->
+        <div class="col">
+            <a href="{{ url_for('schedule') }}" class="text-decoration-none">
+                <div class="card h-100 text-white bg-info shadow-lg border-0 rounded-4">
+                    <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                        <div class="display-1 mb-3">🕐</div>
+                        <h3 class="card-title fw-bold mb-2">時刻表</h3>
+                        <p class="card-text opacity-75">運行時間を確認する</p>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 {% endblock %}
